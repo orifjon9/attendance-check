@@ -18,6 +18,7 @@ import edu.mum.cs.projects.attendance.service.AttendanceService;
  * @since 1.0.0
  * 
  */
+//tests
 @SpringBootApplication
 public class AttendanceReport {
 
