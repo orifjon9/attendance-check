@@ -15,6 +15,7 @@ import edu.mum.cs.projects.attendance.domain.entity.CourseOffering;
  * @version 1.0.0
  * @since 1.0.0
  */
+//test commit from Pagmaa
 public interface AttendanceService {
 	
 	void createAttendanceReportForEntry(String entryDate);
