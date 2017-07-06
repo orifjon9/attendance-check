@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 /**
@@ -20,7 +19,7 @@ import java.util.stream.Collectors;
 @RequestMapping(value="/students")
 public class StudentController {
 
-    @RequestMapping(value="", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     public List<StudentViewModel> students() {
         return SpreadsheetReaderDAO.loadStudentList().stream()
                 .map(m->new StudentViewModel(m))

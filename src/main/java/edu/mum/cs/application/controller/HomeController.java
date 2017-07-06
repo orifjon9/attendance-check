@@ -10,7 +10,7 @@ public class HomeController {
 
     @RequestMapping("/")
     public String index() {
-        return "<a href=\"/students\">students list</a>";
+        return "<a href=\"/students\">students list</a> <br> <a href=\"/courses\">courses list</a>";
     }
 
 }
